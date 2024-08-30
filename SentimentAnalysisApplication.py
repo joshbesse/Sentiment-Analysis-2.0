@@ -1,3 +1,5 @@
+from SentimentAnalysisFacade import SentimentAnalysisFacade
+
 class SentimentAnalysisApplication:
     @staticmethod 
     def main():

@@ -1,3 +1,6 @@
+from BasicAnalyzerMaker import BasicAnalyzerMaker
+from AdvancedAnalyzerMaker import AdvancedAnalyzerMaker
+
 class SentimentAnalysisFacade:
     def __init__(self):
         self.sentiment_analyzer = None 
@@ -10,7 +13,7 @@ class SentimentAnalysisFacade:
     def select_analyzer(self, type):
         if type == "basic":
             maker = BasicAnalyzerMaker()
-            self.sentiment_analyzer = make.make_analyzer()
+            self.sentiment_analyzer = maker.make_analyzer()
             print(f"\n{type} analyzer selected")
         elif type == "advanced":
             maker = AdvancedAnalyzerMaker()

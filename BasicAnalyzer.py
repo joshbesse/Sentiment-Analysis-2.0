@@ -1,5 +1,11 @@
 import re
 
+from Read import Read 
+from AnalyzerContext import AnalyzerContext
+from InitializationState import InitializationState
+from SentimentResult import SentimentResult
+from SentimentMemento import SentimentMemento
+
 class BasicAnalyzer:
     def __init__(self):
         # setting positive and negative words lists
